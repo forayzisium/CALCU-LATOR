@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCU_LATOR</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Calculator-EX</h2>
+            <form>
+                <div class="display">
+            <input type="text" id="display">
+        </div>
+        <div>
+            <input type="button" value="AC" id="ac" onclick="erase()">
+            <input type="button" value="DE" id="de" onclick="delet()">
+            <input type="button" value="." onclick="press('.')">
+            <input type="button" value="/" onclick="press(/)">
+        </div>
+        <div>
+            <input type="button" value="7" onclick="press('7')">
+            <input type="button" value="8" onclick="press('8')">
+            <input type="button" value="9" onclick="press('9')">
+            <input type="button" value="*" onclick="press('*')">
+        </div>
+        <div>
+            <input type="button" value="4" onclick="press('4')">
+            <input type="button" value="5" onclick="press('5')">
+            <input type="button" value="6" onclick="press('6')">
+            <input type="button" value="-" onclick="press('-')">
+        </div>
+        <div>
+            <input type="button" value="1" onclick="press('1')">
+            <input type="button" value="2" onclick="press('2')">
+            <input type="button" value="3" onclick="press('3')">
+            <input type="button" value="+" onclick="press('+')">
+        </div>
+        <div>
+            <input type="button" value="00" onclick="press('00')">
+            <input type="button" value="0" onclick="press('0')">
+            <input type="button" value="=" class="equal" onclick="equal()">
+        </div>
+    </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
